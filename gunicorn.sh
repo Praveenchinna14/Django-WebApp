@@ -10,7 +10,6 @@ pip install mysqlclient
 pip install requests
 pip install pillow
 pip install wheel==0.43.0
-pip install config-pkg==1.5.5
 
 python3 manage.py makemigrations
 python3 manage.py migrate
