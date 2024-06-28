@@ -9,7 +9,7 @@ else
 fi
 
 
-if [ -d "praveen" ]
+if [ -d "env" ]
 then
     echo "Python virtual environment exists."
 else
@@ -22,7 +22,7 @@ echo $PWD
 echo -e "\n\n\n"
 
 echo "Activating the virtual environment"
-source praveen/bin/activate
+source env/bin/activate
 echo -e "\n\n\n"
 
 
