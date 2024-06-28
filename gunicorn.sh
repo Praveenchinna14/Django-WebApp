@@ -4,6 +4,12 @@ source praveen/bin/activate
 
 cd /var/lib/jenkins/workspace/dDjango-WebApp/django_web_app
 
+pip install django
+pip install mysqlclient
+pip install django-rest-framework
+pip install requests
+pip install pillow
+
 python3 manage.py makemigrations
 python3 manage.py migrate
 python3 manage.py collectstatic -- no-input
