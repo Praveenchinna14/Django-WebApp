@@ -22,7 +22,7 @@ echo $PWD
 echo -e "\n\n\n"
 
 echo "Activating the virtual environment"
-source praveen/bin/activate
+source venv/bin/activate
 echo -e "\n\n\n"
 
 
