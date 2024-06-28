@@ -7,7 +7,7 @@ After=network.target
 User=root
 Group=www-data
 WorkingDirectory=/var/lib/jenkins/workspace/django/app
-ExecStart=/var/lib/jenkins/workspace/django/praveen/bin/gunicorn 
+ExecStart=/var/lib/jenkins/workspace/django/env/bin/gunicorn 
            --workers 1 
            --log-level debug 
            --error-logfile /var/lib/jenkins/workspace/django/error.log 
