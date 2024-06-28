@@ -2,17 +2,15 @@
 
 source env/bin/activate
 
-cd /var/lib/jenkins/Django-WebApp
+cd /var/lib/jenkins/workspace/Django-WebApp/django_web_app
 
-pip install django
+pip install django==5.0.6
 pip install gunicorn
 pip install mysqlclient
-pip install pkg_config
-pip install maridb
-pip install libmariadb
 pip install requests
 pip install pillow
-pip install wheel
+pip install wheel==0.43.0
+pip install pkgconfig==1.5.5
 
 python3 manage.py makemigrations
 python3 manage.py migrate
@@ -20,7 +18,7 @@ python3 manage.py collectstatic
 
 echo "Migrations done"
 
-cd /var/lib/workspace/Django-WebApp
+cd /var/lib/jenkins/workspace/Django-WebApp
 
 sudo cp -rf gunicorn.socket /etc/systemd/system/
 sudo cp -rf gunicorn.service /etc/systemd/system/
