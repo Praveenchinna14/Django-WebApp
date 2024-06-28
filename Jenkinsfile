@@ -18,7 +18,7 @@ pipeline{
                 '''
             }
         }
-        stage('setup nginx'){
+        stage('setup NGINX'){
             steps {
                 sh '''
                 chmod +x nginx.sh
