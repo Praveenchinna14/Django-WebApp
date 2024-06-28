@@ -2,7 +2,7 @@
 
 source env/bin/activate
 
-cd /var/lib/jenkins/workspace/Django-WebApp/django_web_app
+cd /var/lib/jenkins/workspace/Django-WebApp
 
 pip install django==5.0.6
 pip install gunicorn
@@ -10,7 +10,7 @@ pip install mysqlclient
 pip install requests
 pip install pillow
 pip install wheel==0.43.0
-pip install pkgconfig==1.5.5
+pip install pkg-config==1.5.5
 
 python3 manage.py makemigrations
 python3 manage.py migrate
