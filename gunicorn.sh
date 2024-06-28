@@ -2,7 +2,7 @@
 
 source env/bin/activate
 
-cd /var/lib/jenkins/workspace/Django-WebApp
+cd /var/lib/jenkins/Django-WebApp
 
 pip install django
 pip install gunicorn
@@ -12,6 +12,7 @@ pip install maridb
 pip install libmariadb
 pip install requests
 pip install pillow
+pip install wheel
 
 python3 manage.py makemigrations
 python3 manage.py migrate
