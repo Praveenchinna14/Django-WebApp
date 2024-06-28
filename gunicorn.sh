@@ -7,6 +7,9 @@ cd /var/lib/jenkins/workspace/Django-WebApp
 pip install django
 pip install gunicorn
 pip install mysqlclient
+pip install pkg-config
+pip install maridb
+pip install libmariadb
 pip install requests
 pip install pillow
 
