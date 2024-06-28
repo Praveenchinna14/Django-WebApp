@@ -2,13 +2,14 @@
 
 source praveen/bin/activate
 
-cd /var/lib/jenkins/workspace/dDjango-WebApp/django_web_app
+cd /var/lib/jenkins/workspace/Django-WebApp/django_web_app
 
 pip install django
 pip install mysqlclient
 pip install django-rest-framework
 pip install requests
 pip install pillow
+pip install psycopg2-binary
 
 python3 manage.py makemigrations
 python3 manage.py migrate
