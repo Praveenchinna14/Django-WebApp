@@ -1,8 +1,8 @@
 #!/bin/bash
 
-source praveen/bin/activate
+source venv/bin/activate
 
-cd /var/lib/jenkins/workspace/Django-WebApp/django_web_app
+cd /var/lib/jenkins/django/Django-WebApp/django_web_app
 
 pip install django
 pip install gunicorn
