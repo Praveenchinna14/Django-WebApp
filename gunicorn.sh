@@ -4,13 +4,6 @@ source venv/bin/activate
 
 cd /var/lib/jenkins/workspace/Django-WebApp/django_web_app
 
-pip install django
-pip install mysqlclient
-pip install django-rest-framework
-pip install requests
-pip install pillow
-pip install psycopg2-binary
-
 python3 manage.py makemigrations
 python3 manage.py migrate
 python3 manage.py collectstatic -- no-input
