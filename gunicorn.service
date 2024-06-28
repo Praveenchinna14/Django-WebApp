@@ -4,18 +4,14 @@ Requires=gunicorn.socket
 After=network.target
 
 [Service]
-User=root
+User=ubuntu
 Group=www-data
 WorkingDirectory=/var/lib/jenkins/workspace/django/app
 ExecStart=/var/lib/jenkins/workspace/django/env/bin/gunicorn 
            --workers 1 
            --log-level debug 
            --error-logfile /var/lib/jenkins/workspace/django/error.log 
-           --bind unix:/run/gunicorn.sock django_web_app.wsgi:application
-
-[Install]
-WantedBy=multi-user.target
-
+           --bind unix:/var/lib/jenkins/workspace/django/run/gunicorn.sock  \ django_web_app.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
