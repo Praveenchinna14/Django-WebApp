@@ -10,7 +10,7 @@ WorkingDirectory=/var/lib/jenkins/workspace/django/
 ExecStart=/var/lib/jenkins/workspace/django/env/bin/gunicorn \ 
           --access-logfile - \
           --workers 3 \
-          --bind 80 unix:/var/lib/jenkins/workspace/django/django_web_app.sock \
+          --bind unix:/var/lib/jenkins/workspace/django/django_web_app.sock \
           django_web_app.wsgi:application
 
 [Install]
