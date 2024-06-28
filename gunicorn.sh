@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source praveen/bin/activate
+source venv/bin/activate
 
 cd /var/lib/jenkins/workspace/Django-WebApp/django_web_app
 
