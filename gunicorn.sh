@@ -7,7 +7,7 @@ cd /var/lib/jenkins/workspace/Django-WebApp
 pip install django
 pip install gunicorn
 pip install mysqlclient
-pip install pkg-config
+pip install pkg_config
 pip install maridb
 pip install libmariadb
 pip install requests
@@ -15,11 +15,11 @@ pip install pillow
 
 python3 manage.py makemigrations
 python3 manage.py migrate
-python3 manage.py collectstatic -- no-input
+python3 manage.py collectstatic 
 
 echo "Migrations done"
 
-cd /var/lib/jenkins/workspace/Django-WebApp
+cd /var/lib/workspace/Django-WebApp
 
 sudo cp -rf gunicorn.socket /etc/systemd/system/
 sudo cp -rf gunicorn.service /etc/systemd/system/
