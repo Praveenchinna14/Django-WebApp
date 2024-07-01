@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo cp -rf app.conf /etc/nginx/sites-available/nginx.conf
+sudo cp -rf nginx.conf /etc/nginx/sites-available/nginx.conf
 chmod 710 /var/lib/jenkins/workspace/django
 
 sudo ln -s /etc/nginx/sites-available/nginx.conf /etc/nginx/sites-enabled
