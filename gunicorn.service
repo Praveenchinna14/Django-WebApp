@@ -7,10 +7,10 @@ After=network.target
 User=jenkins
 Group=jenkins
 WorkingDirectory=/var/lib/jenkins/workspace/django/
-ExecStart=/var/lib/jenkins/workspace/django/env/bin/gunicorn django_web_app.wsgi:application \ 
-          --access-logfile - \
-          --workers 3 \
-          --bind 8000 unix:/var/lib/jenkins/workspace/Django-WebApp/app.sock \
+ExecStart=/var/lib/jenkins/workspace/django/env/bin/gunicorn django_web_app.wsgi:application 
+          --access-logfile - 
+          --workers 3 
+          --bind 8000 unix:/var/lib/jenkins/workspace/Django-WebApp/app.sock 
           django_web_app.wsgi:application
 
 [Install]
